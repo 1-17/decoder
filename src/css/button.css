@@ -1,0 +1,38 @@
+div.button_container {
+  display: flex;
+  gap: 1rem;
+}
+
+button {
+  background-color: transparent;
+  border: 1px solid var(--primary-dark);
+  border-radius: 1rem;
+  color: var(--primary-dark);
+  cursor: pointer;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+button:hover, button:focus-visible, button.disabled {
+  background-color: var(--primary-medium);
+}
+
+button.primary {
+  background-color: var(--primary-dark);
+  color: var(--secondary-light);
+}
+
+button.primary:hover, button.primary:focus-visible, button.primary.disabled {
+  background-color: var(--primary-dark-gray);
+}
+
+header button {
+  border: none;
+  border-radius: 0;
+  width: auto;
+  padding: 0;
+}
+
+header button:hover, header button:focus-visible {
+  background-color: transparent;
+}

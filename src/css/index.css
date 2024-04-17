@@ -1,0 +1,82 @@
+:root {
+  --primary-light: rgb(243, 245, 252);
+  --primary-medium: rgb(216, 223, 232);
+  --primary-dark: rgb(10, 56, 113);
+  --primary-dark-gray: rgb(24, 80, 150);
+  --secondary-light: rgb(255, 255, 255);
+  --secondary-medium: rgb(73, 80, 87);
+  --secondary-dark: rgb(52, 58, 64);
+  --danger: rgb(202, 14, 14);
+  --transparency: rgb(52, 58, 64, 0.25);
+  --container-shape: 2rem;
+  --container-x: 1rem;
+  --container-y: 1.5rem;
+
+  background-color: var(--primary-light);
+}
+
+* {
+  color: var(--secondary-medium);
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+}
+
+*:focus-visible:not(textarea) {
+  outline: 2px solid var(--primary-dark);
+  outline-offset: -1px;
+}
+
+h2 {
+  color: var(--secondary-dark);
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 0;
+}
+
+body.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - (var(--container-y) * 2));
+  padding: var(--container-y) var(--container-x);
+}
+
+header svg.logo {
+  fill: var(--primary-dark);
+}
+
+main.content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 3rem;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+}
+
+footer {
+  font-size: 0.875rem;
+  margin-top: 2rem;
+}
+
+footer p.credits {
+  color: var(--secondary-medium);
+  margin: 0;
+}
+
+footer p.credits a {
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+footer p.credits a:hover {
+  color: var(--primary-dark-gray);
+}

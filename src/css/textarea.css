@@ -1,0 +1,27 @@
+textarea {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+  width: 100%;
+}
+
+textarea::placeholder {
+  color: inherit;
+  opacity: 1;
+}
+
+textarea.input, textarea.output {
+  flex-grow: 1;
+}
+
+textarea.input {
+  border-radius: 1rem;
+  color: var(--primary-dark);
+  font-size: 2rem;
+  margin-top: 4rem;
+}
+
+textarea.output {
+  font-size: 1.5rem;
+}

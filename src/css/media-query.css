@@ -1,0 +1,41 @@
+@media screen and (max-width: 420px) {
+  div.button_container {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 420px) {
+  div.popup_container div.popup button {
+    max-width: 50%;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  header {
+    position: absolute;
+    margin-left: 5%;
+  }
+  
+  main.content {
+    flex-direction: row;
+    max-width: 85%;
+    margin-left: auto;
+  }
+
+  main form {
+    margin-bottom: 2rem;
+  }
+
+  section.output_container {
+    width: 30%;
+  }
+
+  section.output_container img {
+    display: initial;
+  }
+
+  footer {
+    margin-left: 5%;
+    margin-top: -1rem;
+  }
+}
