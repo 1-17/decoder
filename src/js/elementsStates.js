@@ -17,7 +17,13 @@ const setPopupTypeAndMessage = (type, message) => {
 
 export const output = {}
 output.render = () => toggleElement(outputField.parentElement, outputPlaceholder)
-output.unmount = () => toggleElement(outputPlaceholder, outputField.parentElement)
+output.unmount = () => {
+  if (outputField.value !== "") {
+    outputField.value = ""
+  }
+  
+  toggleElement(outputPlaceholder, outputField.parentElement)
+}
 
 const mainButtons = [encryptButton, decryptButton]
 
@@ -30,9 +36,8 @@ popup.success = (message) => setPopupTypeAndMessage("success", message)
 popup.error = (message) => setPopupTypeAndMessage("error", message)
 
 export const clearApp = () => {
-  if (inputField.value !== "" || outputField.value !== "") {
+  if (inputField.value !== "") {
     inputField.value = ""
-    outputField.value = ""
   }
   
   buttons.disable()
