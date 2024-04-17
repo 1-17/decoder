@@ -36,6 +36,7 @@ export const clearApp = () => {
   }
   
   buttons.disable()
+  output.unmount()
 }
 
 export const unmountPopup = () => toggleElement(null, popupElement)
