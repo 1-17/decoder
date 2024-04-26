@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://github.com/1-17/decoder" title="Decoder GitHub repository">
-    <img src="preview.png" alt="Decoder preview" width="250px">
+    <img src="mockup.png" alt="Decoder preview" width="250px">
   </a>
   <h3>Decoder</h3>
   <p>
